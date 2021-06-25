@@ -16,6 +16,7 @@ data "tfe_team" "bu2dev" {
   organization = var.org_name
 }
 
+/*
 resource "tfe_workspace" "bu2-app1-aws-useast1-dev" {
   name           = "bu2-app1-aws-useast1-dev"
   organization   =  var.org_name
@@ -32,4 +33,4 @@ resource "tfe_team_access" "bu2-app1-aws-useast1-dev-accessdev" {
   access       = "write"
   team_id      = data.tfe_team.bu2dev.id
   workspace_id = tfe_workspace.bu2-app1-aws-useast1-dev.id
-}
+} */
